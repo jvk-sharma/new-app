@@ -1,11 +1,5 @@
-
 require 'test_helper'
-
-class StaticPagesControllerTest < ActionController::TestCase 
-  
-  def setup
-    @base_title = "Ruby on rails sample app"
-  end
+class StaticPagesControllerTest < ActionController::TestCase
   
   test "should get home" do
     get :home
@@ -16,9 +10,15 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :help
     assert_response :success
   end
-
+  
   test "should get about" do
     get :about
     assert_response :success
   end
+  
 end
+
+
+
+
+
